@@ -1,0 +1,35 @@
+version: "з" 
+services:
+  node-1:
+    network mode: host 
+    extends:
+      file: "./Node-1/docker-compose.yaml"
+      service: node
+    logging:
+      options:
+        max-size: 50m
+  node-2:
+    network mode: host 
+    extends:
+      file: "./Node-2/docker-compose.yaml"
+      service: node
+    logging:
+      options:
+        max-size: 50m
+  node-3:
+    network mode: host 
+    extends:
+      file: "./Node-3/docker-compose.yaml"
+      service: node
+    logging:
+      options:
+        max-size: 50m
+  node-4:
+    network mode: host 
+    extends:
+      file: "./Node-4/docker-compose.yaml"
+      service: node
+    logging:
+      options:
+        max-size: 50m
+

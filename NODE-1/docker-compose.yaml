@@ -1,0 +1,13 @@
+version: "3"
+ services:
+node:
+image: hyperledger/besu:23.1.2 
+container_name: "node-1-qbft"
+
+volumes: 
+- .:/usr/app/ 
+command: --config-file=/usr/app/config.toml 
+logging:
+ options:
+  max-size: 50m
+

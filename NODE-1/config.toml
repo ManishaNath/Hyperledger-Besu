@@ -1,0 +1,7 @@
+data-path="data"
+genesis-file="..\genesis.json"
+rpc-http-enabled=true
+rpc-http-api=["ETH","NET","QBFT"]
+host-allowlist=["*"]
+rpc-http-cors-origins=["all"]
+rpc-http-port=8545
